@@ -60,4 +60,7 @@ async def on_message(message):  # event that happens per any message.
         file = discord.File(r"C:\Users\Robin\Pictures\aoebo\fcknights.png", filename="fcknights.png")
         await message.channel.send("fcknights.png", file=file)
 
+    elif "!beep" == message.content.lower():
+        await message.channel.send("BEEP BOOP I AM A ROBOT!")
+        
 client.run(token)  # bot token
